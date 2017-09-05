@@ -1,0 +1,17 @@
+---
+modules:
+  local:
+    sequential: true
+  jmeter:
+    gui: false
+
+execution:
+- concurrency: 500
+  hold-for: 3600s
+  iterations: 10
+  ramp-up: 10s
+  scenario: source-activity-scenario
+
+scenarios:
+  source-activity-scenario:
+    requests:
